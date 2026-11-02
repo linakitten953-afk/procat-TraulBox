@@ -1173,18 +1173,18 @@ CREATE TABLE IF NOT EXISTS bookings(
 
         var items = new (string Name, int Cat, string Desc, string Img, double Price, double Dep, int Qty, int Repair, int Off, string Cond)[]
         {
-            ("Горный велосипед", 1, "Алюминиевая рама, 21 скорость, дисковые тормоза. Шлем в комплекте.", "https://th.bing.com/th/id/OIP.pWamWPsvOh1FGNdwFaGmcAHaEm?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", 900, 5000, 6, 0, 0, "Отличное"),
-            ("Сноуборд с креплениями", 1, "Универсальный сноуборд 155 см для катания по трассе и парку.", "https://tse3.mm.bing.net/th/id/OIP.aBScvW2JexjB2kYrlXmdqgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 700, 4000, 5, 0, 0, "Хорошее"),
+            ("Велосипед", 1, "Алюминиевая рама, дисковые тормоза. Шлем в комплекте.", "https://th.bing.com/th/id/OIP.pWamWPsvOh1FGNdwFaGmcAHaEm?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", 900, 5000, 6, 0, 0, "Отличное"),
+            ("Беговые ролики", 1, "Размеры 38-45, жесткий ботинок, комплект защиты в подарок.", "https://n.cdn.cdek.shopping/images/shopping/8a29LVRXyMHA4zjk.webp?v=1", 250, 1000, 12, 0, 0, "Хорошее"),
+            ("Сноуборд", 1, "Универсальный сноуборд для катания по трассе и парку.", "https://tse3.mm.bing.net/th/id/OIP.aBScvW2JexjB2kYrlXmdqgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 700, 4000, 5, 0, 0, "Хорошее"),
+            ("Беговая дорожка", 1, "Стальная секция 2×1 м, нагрузка до 200 кг. Продаётся комплектами.", "https://avatars.mds.yandex.net/get-mpic/20004663/2a0000019ed0632ca218e2b66b3086a1ed45/orig", 400, 2000, 10, 0, 0, "Хорошее"),
             ("Беговые лыжи, комплект", 1, "Лыжи с палками и ботинками, подбор по росту и размеру.", "https://50.img.avito.st/image/1/1.HEwmvra5sKUQF3KgEvo0Hswdtq-Snbhnlx2yoZoXuqc.___XaB8Z2xWn8QGVpVfTMhq1hI3OmR0n2GnGI41oiTI", 500, 3000, 8, 0, 0, "Хорошее"),
-            ("Каяк двухместный", 1, "Надувной двухместный каяк с вёслами, насосом и спасжилетами.", "https://openmark.ru/UserFiles/Image/Lodki/Naduvnye-lodki/img711_94185.jpg", 1500, 8000, 3, 1, 0, "Хорошее"),
-            ("Палатка 4-местная", 2, "Трёхсезонная палатка с тамбуром, вес 5,2 кг, водостойкость 3000 мм.", "https://ir.ozone.ru/s3/multimedia-1-b/c1000/6987625139.jpg", 600, 3000, 7, 0, 0, "Отличное"),
-            ("Спальный мешок до −15 °C", 2, "Тёплый спальный мешок-кокон с компрессионным чехлом.", "https://ir.ozone.ru/s3/multimedia-1-6/c1000/8772581598.jpg", 250, 1000, 12, 0, 0, "Хорошее"),
-            ("Рюкзак туристический 70 л", 2, "Анатомическая спинка, дождевик, боковые карманы для бутылок.", "https://tse2.mm.bing.net/th/id/OIP.17uBPpoq255VCCvYH2372gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 300, 1500, 9, 0, 0, "Хорошее"),
-            ("Газовая горелка с набором", 2, "Горелка, котелок и кружки на двоих. Баллон оплачивается отдельно.", "https://japan-power.ru/image/cache/catalog/2025/gorelka-soto-amicus-cooker-combo-700x500.jpg", 150, 800, 10, 0, 0, "Хорошее"),
-            ("Перфоратор", 3, "Мощность 900 Вт, режимы сверления и долбления, кейс и набор буров.", "https://tse3.mm.bing.net/th/id/OIP.OJ86UvLEQj_aENSv_UG1MQHaFY?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 800, 4000, 5, 0, 1, "Хорошее"),
-            ("Бензопила", 3, "Шина 40 см, мощность 2,2 кВт. Масло и бензин оплачиваются отдельно.", "https://tse4.mm.bing.net/th/id/OIP.0FlsjYw8KIniGMStscWdKQHaD6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 1000, 6000, 3, 0, 0, "Отличное"),
-            ("Строительные леса, секция", 3, "Стальная секция 2×1 м, нагрузка до 200 кг. Продаётся комплектами.", "https://tse1.mm.bing.net/th/id/OIP.mXXClvwbYY7l2UUc4w6ygQHaEg?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 400, 2000, 10, 0, 0, "Хорошее"),
-            ("Бетономешалка 160 л", 3, "Электрическая, барабан 160 л, колёса для перемещения по участку.", "https://tse1.mm.bing.net/th/id/OIP.4gF6nxfTBkpKw3ft8p7gIwHaHZ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 900, 5000, 2, 0, 0, "Удовлетворительное")
+            ("Ботинки для сноуборда", 1, "Жесткие ботинки с системой быстрой шнуровки, размеры 40-45.", "https://cdn.sportmaster.ru/upload/mdm/media_content/resize/689/768_1024_7f92/147108290299.jpg", 1500, 8000, 3, 1, 0, "Хорошее"),
+            ("Палатка", 2, "Трёхсезонная палатка, водостойкая", "https://ir.ozone.ru/s3/multimedia-1-b/c1000/6987625139.jpg", 600, 3000, 7, 0, 0, "Отличное"),
+            ("Треккинговые палки", 2, "Пара складных палок из алюминия с регулировкой высоты.", "https://avatars.mds.yandex.net/get-mpic/20327228/2a0000019fb7b4f845e4516b0871430762ee/orig", 100, 500, 15, 0, 0, "Отличное"),
+            ("Рюкзак 70 л", 2, "Анатомическая спинка, дождевик, боковые карманы для бутылок.", "https://tse2.mm.bing.net/th/id/OIP.17uBPpoq255VCCvYH2372gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 300, 1500, 9, 0, 0, "Хорошее"),
+            ("Отбойный молоток", 3, "Мощность 1500 Вт, удар 45 Дж, в комплекте пики и кейс.", "https://cdn.vseinstrumenti.ru/images/goods/stroitelnyj-instrument/otbojnye-molotki/7034612/2400x1600/73410998.jpg", 800, 4000, 5, 0, 1, "Хорошее"),
+            ("Бензопила", 3, "Шина 40 см. Масло и бензин оплачиваются отдельно.", "https://tse4.mm.bing.net/th/id/OIP.0FlsjYw8KIniGMStscWdKQHaD6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 1000, 6000, 3, 0, 0, "Отличное"),
+            ("Бетономешалка", 3, "Электрическая, колёса для перемещения по участку.", "https://tse1.mm.bing.net/th/id/OIP.4gF6nxfTBkpKw3ft8p7gIwHaHZ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 900, 5000, 2, 0, 0, "Удовлетворительное")
         };
 
         // заполнение каталога
