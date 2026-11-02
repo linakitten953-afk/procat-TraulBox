@@ -1,4 +1,4 @@
-/* - Переменные -- */
+/* Переменные */
 :root {
   --bg: #08080a;
   --panel: #111114;
@@ -72,7 +72,7 @@ h3 {
   margin: 0 0 12px;
 }
 
-/* Шапка - */
+/* Шапка */
 .top {
   padding: 34px 0 22px;
   border-bottom: 1px solid var(--line);
